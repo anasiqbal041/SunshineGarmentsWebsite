@@ -54,7 +54,7 @@ const Footer = () => {
                         <div className="space-y-6 mb-10">
                             <div className="flex gap-4">
                                 <FaMapMarkerAlt className="text-pink-500 shrink-0 mt-1" />
-                                <p className="text-sm font-semibold text-gray-500 leading-relaxed">123 Sunshine Plaza, Fashion District, Lahore, Pakistan</p>
+                                <p className="text-sm font-semibold text-gray-500 leading-relaxed">123 Sunshine Plaza, Main Bazaar, Gilgit, Pakistan</p>
                             </div>
                             <div className="flex gap-4">
                                 <FaPhoneAlt className="text-pink-500 shrink-0" />

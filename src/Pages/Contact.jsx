@@ -38,7 +38,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h3 className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Boutique Address</h3>
-                                    <p className="text-sm font-bold text-gray-900 dark:text-white leading-relaxed">Luxury Plaza, Fashion Enclave<br />Main Boulevard, Lahore, Pakistan</p>
+                                    <p className="text-sm font-bold text-gray-900 dark:text-white leading-relaxed">Sunshine Boutique<br />Main Bazaar, Gilgit, Pakistan</p>
                                 </div>
                             </div>
 
@@ -106,7 +106,7 @@ const Contact = () => {
                         <div className="mt-12 aspect-video rounded-[3rem] overflow-hidden grayscale hover:grayscale-0 transition-all duration-700 premium-shadow">
                             <iframe
                                 title="Map"
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108841.01160456488!2d74.2252174665416!3d31.515518298717904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190483e58107d9%3A0xc202c601b51872fe!2sLahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1703632000000!5m2!1sen!2s"
+                                src="https://www.google.com/maps?q=Gilgit%20Pakistan&z=12&output=embed"
                                 className="w-full h-full border-0"
                                 allowFullScreen=""
                                 loading="lazy"
