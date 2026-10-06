@@ -5,9 +5,18 @@
 @tailwind utilities;
 
 @layer base {
+  html, body {
+    overflow-x: hidden;
+  }
+
   body {
     @apply bg-white text-gray-950 transition-colors duration-500;
     font-family: 'Plus Jakarta Sans', 'Outfit', sans-serif;
+  }
+
+  img {
+    display: block;
+    max-width: 100%;
   }
 
   .dark body {

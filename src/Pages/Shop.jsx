@@ -55,7 +55,7 @@ const Shop = () => {
     return (
         <div className="bg-white dark:bg-gray-950 min-h-screen transition-all duration-500">
             <Helmet>
-                <title>Shop Collection | Sunshine Baby Garments</title>
+                <title>Shop Collection | Anas Baby Garments</title>
             </Helmet>
             <Navbar />
 

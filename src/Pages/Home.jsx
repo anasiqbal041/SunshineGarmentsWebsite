@@ -56,7 +56,7 @@ const Home = () => {
     return (
         <div className="bg-white dark:bg-gray-950 transition-colors duration-500 overflow-x-hidden">
             <Helmet>
-                <title>Sunshine Baby Garments | Premium Kids Wear</title>
+                <title>Anas Baby Garments | Premium Kids Wear</title>
             </Helmet>
             <Navbar />
 
@@ -265,7 +265,7 @@ const Home = () => {
 
             <div className="py-12 border-t dark:border-gray-800">
                 <div className="container mx-auto px-6 text-center">
-                    <h3 className="text-sm font-black uppercase tracking-[0.3em] text-gray-400 mb-4">Follow The Sunshine</h3>
+                    <h3 className="text-sm font-black uppercase tracking-[0.3em] text-gray-400 mb-4">Follow The Anas</h3>
                     <div className="flex justify-center gap-6">
                         {['Instagram', 'Facebook', 'Pinterest', 'TikTok'].map((social) => (
                             <a key={social} href="#" className="text-xs font-black uppercase tracking-widest text-gray-900 dark:text-gray-100 hover:text-pink-500 transition">{social}</a>

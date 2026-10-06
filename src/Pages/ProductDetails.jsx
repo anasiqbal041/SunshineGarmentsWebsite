@@ -39,7 +39,7 @@ const ProductDetails = () => {
     return (
         <div className="bg-white dark:bg-gray-950 transition-colors duration-500">
             <Helmet>
-                <title>{product.name} | Sunshine Premium</title>
+                <title>{product.name} | Anas Premium</title>
             </Helmet>
             <Navbar />
 

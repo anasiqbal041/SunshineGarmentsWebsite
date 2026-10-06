@@ -38,7 +38,7 @@ const Checkout = () => {
                         <FaShieldAlt className="text-white" size={32} />
                     </div>
                     <h1 className="text-5xl font-black text-gray-900 dark:text-white mb-6 tracing-tighter">Order Confirmed</h1>
-                    <p className="text-gray-400 font-medium mb-12 max-w-md mx-auto">Thank you for choosing Sunshine Premium. Your little one's treats will arrive shortly.</p>
+                    <p className="text-gray-400 font-medium mb-12 max-w-md mx-auto">Thank you for choosing Anas Premium. Your little one's treats will arrive shortly.</p>
                     <Link to="/shop" className="px-12 py-5 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-2xl text-xs font-black uppercase tracking-[0.2em] hover:bg-pink-500 hover:text-white dark:hover:bg-pink-500 dark:hover:text-white transition-all shadow-xl active:scale-95 inline-block">
                         Continue Shopping
                     </Link>
@@ -51,7 +51,7 @@ const Checkout = () => {
     return (
         <div className="bg-white dark:bg-gray-950 min-h-screen transition-colors duration-500">
             <Helmet>
-                <title>Secure Checkout | Sunshine Premium</title>
+                <title>Secure Checkout | Anas Premium</title>
             </Helmet>
             <Navbar />
 

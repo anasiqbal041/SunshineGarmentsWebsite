@@ -10,7 +10,7 @@ const Footer = () => {
                     {/* Column 1: Brand & Identity */}
                     <div className="flex flex-col">
                         <Link to="/" className="text-2xl font-black tracking-tighter mb-8 dark:text-white">
-                            <span className="text-pink-500 uppercase">Sunshine</span> <span className="text-xs font-bold tracking-widest text-gray-400">Baby Garments</span>
+                            <span className="text-pink-500 uppercase">Anas</span> <span className="text-xs font-bold tracking-widest text-gray-400">Baby Garments</span>
                         </Link>
                         <p className="text-gray-500 dark:text-gray-400 text-sm font-medium leading-[1.8] mb-8 max-w-xs">
                             Dedicated to providing the most gentle, safe, and stylish clothing for your little miracles. Because every childhood deserves to shine.
@@ -54,7 +54,7 @@ const Footer = () => {
                         <div className="space-y-6 mb-10">
                             <div className="flex gap-4">
                                 <FaMapMarkerAlt className="text-pink-500 shrink-0 mt-1" />
-                                <p className="text-sm font-semibold text-gray-500 leading-relaxed">123 Sunshine Plaza, Main Bazaar, Gilgit, Pakistan</p>
+                                <p className="text-sm font-semibold text-gray-500 leading-relaxed">123 Anas Plaza, Main Bazaar, Gilgit, Pakistan</p>
                             </div>
                             <div className="flex gap-4">
                                 <FaPhoneAlt className="text-pink-500 shrink-0" />
@@ -74,7 +74,7 @@ const Footer = () => {
 
                 <div className="pt-12 border-t border-gray-100 dark:border-gray-900 flex flex-col md:flex-row justify-between items-center gap-6">
                     <p className="text-[11px] font-bold text-gray-400 uppercase tracking-widest">
-                        &copy; {new Date().getFullYear()} Sunshine Premium Garments. All rights reserved.
+                        &copy; {new Date().getFullYear()} Anas Premium Garments. All rights reserved.
                     </p>
                     <div className="flex gap-8">
                         {['Privacy', 'Terms', 'Cookies'].map((item) => (
