@@ -16,7 +16,7 @@ const Cart = () => {
     return (
         <div className="bg-white dark:bg-gray-950 min-h-screen transition-colors duration-500">
             <Helmet>
-                <title>Shopping Bag | Anas Premium</title>
+                <title>Shopping Bag | Sunshine Premium</title>
             </Helmet>
             <Navbar />
 

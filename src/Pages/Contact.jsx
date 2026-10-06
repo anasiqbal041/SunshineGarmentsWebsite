@@ -8,7 +8,7 @@ const Contact = () => {
     return (
         <div className="bg-white dark:bg-gray-950 min-h-screen transition-colors duration-500">
             <Helmet>
-                <title>Contact Us | Anas Baby Garments</title>
+                <title>Contact Us | Sunshine Baby Garments</title>
             </Helmet>
             <Navbar />
 
@@ -38,7 +38,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h3 className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Boutique Address</h3>
-                                    <p className="text-sm font-bold text-gray-900 dark:text-white leading-relaxed">Anas Boutique<br />Main Bazaar, Gilgit, Pakistan</p>
+                                    <p className="text-sm font-bold text-gray-900 dark:text-white leading-relaxed">Sunshine Boutique<br />Main Bazaar, Gilgit, Pakistan</p>
                                 </div>
                             </div>
 
@@ -59,7 +59,7 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h3 className="text-[10px] font-black text-gray-400 uppercase tracking-widest mb-1">Email Inquiries</h3>
-                                    <p className="text-sm font-bold text-gray-900 dark:text-white leading-relaxed">care@anaspremium.com</p>
+                                    <p className="text-sm font-bold text-gray-900 dark:text-white leading-relaxed">care@sunshinepremium.com</p>
                                 </div>
                             </div>
 

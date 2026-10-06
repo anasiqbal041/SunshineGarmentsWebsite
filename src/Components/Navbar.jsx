@@ -77,7 +77,7 @@ const Navbar = () => {
                 <div className="container mx-auto px-6 flex justify-between items-center opacity-80">
                     <div className="flex items-center space-x-6 tracking-wide">
                         <span className="flex items-center gap-2 hover:text-pink-400 cursor-pointer transition"><FaPhoneAlt size={10} /> +92 300 1234567</span>
-                        <span className="flex items-center gap-2 hover:text-pink-400 cursor-pointer transition"><FaEnvelope size={10} /> support@anas.pk</span>
+                        <span className="flex items-center gap-2 hover:text-pink-400 cursor-pointer transition"><FaEnvelope size={10} /> support@sunshine.pk</span>
                     </div>
                     <div className="flex items-center space-x-6 tracking-wide uppercase font-semibold">
                         <span className="cursor-pointer hover:text-pink-400 transition">Track Order</span>
@@ -94,7 +94,7 @@ const Navbar = () => {
             <div className="container mx-auto px-6 py-4 flex items-center justify-between gap-8">
                 {/* Logo */}
                 <Link to="/" className="text-2xl font-black flex items-center dark:text-white tracking-tighter shrink-0">
-                    <span className="text-pink-500 uppercase">Anas</span>
+                    <span className="text-pink-500 uppercase">Sunshine</span>
                     <span className="text-gray-900 dark:text-gray-100 ml-2 font-bold tracking-widest uppercase text-xs">Baby Garments</span>
                 </Link>
 
@@ -176,7 +176,7 @@ const Navbar = () => {
                 <div className="flex flex-col h-full p-8">
                     <div className="flex justify-between items-center mb-12">
                         <Link to="/" className="text-xl font-black tracking-tight" onClick={() => setIsOpen(false)}>
-                            <span className="text-pink-500 uppercase">Anas</span>
+                            <span className="text-pink-500 uppercase">Sunshine</span>
                             <span className="ml-2 text-gray-900 dark:text-white uppercase text-[10px] tracking-[0.25em]">Baby</span>
                         </Link>
                         <button onClick={() => setIsOpen(false)} className="bg-gray-100 dark:bg-gray-800 p-2 rounded-full">

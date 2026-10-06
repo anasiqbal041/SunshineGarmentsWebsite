@@ -16,7 +16,7 @@ const testimonials = [
         role: 'Verified Buyer',
         image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80',
         rating: 5,
-        text: "Fast delivery and beautiful packaging. The toddler tracksuit fits my son perfectly. Highly recommend Anas for stylish and durable kids' wear."
+        text: "Fast delivery and beautiful packaging. The toddler tracksuit fits my son perfectly. Highly recommend Sunshine for stylish and durable kids' wear."
     },
     {
         id: 3,
@@ -37,7 +37,7 @@ const Testimonials = () => {
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mt-2">What Parents Say</h2>
                     <div className="w-16 h-1 bg-indigo-500 mx-auto mt-4 rounded-full"></div>
                     <p className="max-w-xl mx-auto mt-4 text-gray-600 dark:text-gray-300">
-                        Trusted by thousands of happy parents. Here's what they have to say about their experience with Anas.
+                        Trusted by thousands of happy parents. Here's what they have to say about their experience with Sunshine.
                     </p>
                 </div>
 

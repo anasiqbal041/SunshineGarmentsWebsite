@@ -9,7 +9,7 @@ import p7_girl_banner from '../assets/banner_girl.png';
 export const products = [
     {
         id: 1,
-        name: 'Kids Rib Innerwear Pink Sw - Anas',
+        name: 'Kids Rib Innerwear Pink Sw - Sunshine',
         price: 850.00,
         category: 'Baby Girl',
         gender: 'Girl',
@@ -27,7 +27,7 @@ export const products = [
     },
     {
         id: 3,
-        name: 'Kids Fleece Pajama Set Rabbit Off White - Anas',
+        name: 'Kids Fleece Pajama Set Rabbit Off White - Sunshine',
         price: 950.00,
         category: 'Baby',
         gender: 'Unisex',
@@ -35,7 +35,7 @@ export const products = [
     },
     {
         id: 4,
-        name: 'Girls Tights Pink - Anas',
+        name: 'Girls Tights Pink - Sunshine',
         price: 450.00,
         category: 'Baby Girl',
         gender: 'Girl',
@@ -43,7 +43,7 @@ export const products = [
     },
     {
         id: 5,
-        name: 'Kids Sneakers Warrior Red - Anas',
+        name: 'Kids Sneakers Warrior Red - Sunshine',
         price: 1500.00,
         category: 'Accessories',
         gender: 'Boy',
@@ -60,7 +60,7 @@ export const products = [
     },
     {
         id: 7,
-        name: 'Kids Rib Innerwear Sea Blue Sw - Anas',
+        name: 'Kids Rib Innerwear Sea Blue Sw - Sunshine',
         price: 600.00,
         category: 'Baby Boy',
         gender: 'Boy',
@@ -68,7 +68,7 @@ export const products = [
     },
     {
         id: 8,
-        name: 'Baby Warm Pajama Set Excavator Blue - Anas',
+        name: 'Baby Warm Pajama Set Excavator Blue - Sunshine',
         price: 890.00,
         category: 'Baby Boy',
         gender: 'Boy',
@@ -100,7 +100,7 @@ export const products = [
     },
     {
         id: 12,
-        name: 'Kids Premium Mock Neck Light Beige - Anas',
+        name: 'Kids Premium Mock Neck Light Beige - Sunshine',
         price: 900.00,
         category: 'Baby',
         gender: 'Unisex',

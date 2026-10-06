@@ -8,7 +8,7 @@ function PageNotFound() {
   return (
     <div className="bg-white dark:bg-gray-950 min-h-screen transition-colors duration-500 overflow-hidden">
       <Helmet>
-        <title>Lost in Space | Anas Premium</title>
+        <title>Lost in Space | Sunshine Premium</title>
       </Helmet>
       <Navbar />
 
@@ -73,7 +73,7 @@ function PageNotFound() {
 
         <div className="text-appear relative z-10">
           <span className="text-pink-500 font-black uppercase tracking-[0.4em] text-[10px] mb-4 block animate-bounce">Out of Orbit</span>
-          <h1 className="text-5xl md:text-7xl font-black text-gray-900 dark:text-white mb-6 tracking-tighter">Lost in the Anas?</h1>
+          <h1 className="text-5xl md:text-7xl font-black text-gray-900 dark:text-white mb-6 tracking-tighter">Lost in the Sunshine?</h1>
           <p className="text-gray-500 dark:text-gray-400 font-medium max-w-lg mx-auto mb-12 leading-relaxed italic">
             "Beauty is in the path we take, even if we wander a little off course."
           </p>
