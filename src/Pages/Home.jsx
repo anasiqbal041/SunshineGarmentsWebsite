@@ -83,11 +83,11 @@ const Home = () => {
                                 <p className="text-base md:text-lg text-white/80 mb-10 max-w-lg leading-relaxed font-medium">
                                     {slide.desc}
                                 </p>
-                                <div className="flex flex-wrap gap-4">
-                                    <Link to={slide.link} className={`px-10 py-5 bg-gradient-to-r ${slide.accent} text-white rounded-full font-black uppercase tracking-widest text-[10px] hover:scale-105 transition-all shadow-xl shadow-pink-500/20 flex items-center gap-3 active:scale-95`}>
-                                        {slide.cta} <FaArrowRight />
+                                <div className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
+                                    <Link to={slide.link} className={`w-full sm:w-auto px-6 sm:px-10 py-4 sm:py-5 bg-gradient-to-r ${slide.accent} text-white rounded-full font-black uppercase tracking-widest text-[10px] hover:scale-[1.02] transition-all shadow-xl shadow-pink-500/20 flex items-center justify-center gap-3 active:scale-95 whitespace-nowrap`}>
+                                        {slide.cta} <FaArrowRight className="text-xs" />
                                     </Link>
-                                    <Link to="/shop" className="px-10 py-5 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full font-black uppercase tracking-widest text-[10px] hover:bg-white hover:text-gray-900 transition-all active:scale-95">
+                                    <Link to="/shop" className="w-full sm:w-auto px-6 sm:px-10 py-4 sm:py-5 bg-white/10 backdrop-blur-md border border-white/20 text-white rounded-full font-black uppercase tracking-widest text-[10px] hover:bg-white hover:text-gray-900 transition-all active:scale-95 whitespace-nowrap flex items-center justify-center">
                                         View All
                                     </Link>
                                 </div>
