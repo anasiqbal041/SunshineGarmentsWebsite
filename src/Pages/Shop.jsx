@@ -40,7 +40,7 @@ const Shop = () => {
             categoryMatch = product.category === selectedCategory;
         }
 
-        const priceMatch = product.price <= priceRange;
+        const priceMatch = getProductPriceDetails(product).price <= priceRange;
         return categoryMatch && priceMatch;
     });
 
