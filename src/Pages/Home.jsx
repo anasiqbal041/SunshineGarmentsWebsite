@@ -4,8 +4,7 @@ import Footer from '../Components/Footer';
 import ProductCard from '../Components/ProductCard';
 import Testimonials from '../Components/Testimonials';
 import { Helmet } from 'react-helmet';
-import { FaStar, FaShoppingBag, FaTruck, FaHeadset, FaUndo, FaShieldAlt, FaArrowRight } from 'react-icons/fa';
-import heroImage1 from '../assets/hero_baby.png';
+import { FaShoppingBag, FaTruck, FaHeadset, FaUndo, FaShieldAlt, FaArrowRight } from 'react-icons/fa';
 import heroImage2 from '../assets/hero_toddler.png';
 import heroImage3 from '../assets/hero_sleeping.png';
 import { products } from '../Data/products';
@@ -268,7 +267,7 @@ const Home = () => {
                     <h3 className="text-sm font-black uppercase tracking-[0.3em] text-gray-400 mb-4">Follow The Sunshine</h3>
                     <div className="flex justify-center gap-6">
                         {['Instagram', 'Facebook', 'Pinterest', 'TikTok'].map((social) => (
-                            <a key={social} href="#" className="text-xs font-black uppercase tracking-widest text-gray-900 dark:text-gray-100 hover:text-pink-500 transition">{social}</a>
+                            <button key={social} type="button" className="text-xs font-black uppercase tracking-widest text-gray-900 dark:text-gray-100 hover:text-pink-500 transition">{social}</button>
                         ))}
                     </div>
                 </div>

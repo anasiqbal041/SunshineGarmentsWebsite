@@ -1,7 +1,7 @@
 import React from 'react';
 import { useCart } from '../Context/CartContext';
 import { Link } from 'react-router-dom';
-import { FaHeart, FaShoppingBag, FaEye } from 'react-icons/fa';
+import { FaShoppingBag, FaEye } from 'react-icons/fa';
 import { getProductPriceDetails } from '../Data/products';
 
 const ProductCard = ({ product }) => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookF, FaTwitter, FaInstagram, FaPinterestP, FaYoutube, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube, FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
@@ -17,9 +17,9 @@ const Footer = () => {
                         </p>
                         <div className="flex gap-4">
                             {[FaFacebookF, FaInstagram, FaTwitter, FaYoutube].map((Icon, i) => (
-                                <a key={i} href="#" className="w-10 h-10 rounded-full border border-gray-200 dark:border-gray-800 flex items-center justify-center text-gray-400 hover:bg-pink-500 hover:text-white hover:border-pink-500 transition-all duration-300">
+                                <button key={i} type="button" aria-label={`Social media link ${i + 1}`} className="w-10 h-10 rounded-full border border-gray-200 dark:border-gray-800 flex items-center justify-center text-gray-400 hover:bg-pink-500 hover:text-white hover:border-pink-500 transition-all duration-300">
                                     <Icon size={14} />
-                                </a>
+                                </button>
                             ))}
                         </div>
                     </div>
@@ -78,7 +78,7 @@ const Footer = () => {
                     </p>
                     <div className="flex gap-8">
                         {['Privacy', 'Terms', 'Cookies'].map((item) => (
-                            <a key={item} href="#" className="text-[11px] font-bold text-gray-400 uppercase tracking-widest hover:text-pink-500 transition">{item}</a>
+                            <button key={item} type="button" className="text-[11px] font-bold text-gray-400 uppercase tracking-widest hover:text-pink-500 transition">{item}</button>
                         ))}
                     </div>
                 </div>

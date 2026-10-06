@@ -3,7 +3,7 @@ import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import ProductCard from '../Components/ProductCard';
 import { Helmet } from 'react-helmet';
-import { useSearchParams, Link } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import { getProductPriceDetails, products as allProducts } from '../Data/products';
 import { FaFilter, FaChevronDown } from 'react-icons/fa';
 import bannerGirl from '../assets/banner_girl.png';

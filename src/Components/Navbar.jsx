@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useCart } from '../Context/CartContext';
 import { Link, useLocation } from 'react-router-dom';
-import { FaSearch, FaShoppingBag, FaUser, FaPhoneAlt, FaEnvelope, FaBars, FaTimes, FaMapMarkerAlt, FaSun, FaMoon, FaWhatsapp } from 'react-icons/fa';
+import { FaSearch, FaShoppingBag, FaPhoneAlt, FaEnvelope, FaBars, FaTimes, FaSun, FaMoon, FaWhatsapp } from 'react-icons/fa';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);

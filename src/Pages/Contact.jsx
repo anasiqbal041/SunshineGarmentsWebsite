@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../Components/Navbar';
 import Footer from '../Components/Footer';
 import { Helmet } from 'react-helmet';
-import { FaMapMarkerAlt, FaPhone, FaEnvelope, FaClock, FaWhatsapp, FaGlobe } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaEnvelope, FaClock, FaWhatsapp } from 'react-icons/fa';
 
 const Contact = () => {
     return (
