@@ -319,3 +319,15 @@ export const products = [
         badge: '-50%'
     }
 ];
+
+export const getProductPriceDetails = (product) => {
+    if (product.badge !== 'Sale') {
+        return { price: product.price };
+    }
+
+    return {
+        price: Math.round(product.price * 0.9),
+        originalPrice: product.price,
+        discountPercent: 10
+    };
+};

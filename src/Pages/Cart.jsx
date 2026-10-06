@@ -62,6 +62,11 @@ const Cart = () => {
                                                 <div className="text-right">
                                                     <span className="text-xs font-bold text-gray-400 block mb-1">Item Total</span>
                                                     <span className="text-xl font-black text-gray-900 dark:text-white">Rs.{(item.price * item.quantity).toLocaleString()}</span>
+                                                    {item.originalPrice && (
+                                                        <span className="text-xs text-gray-400 line-through font-bold block">
+                                                            Rs.{(item.originalPrice * item.quantity).toLocaleString()}
+                                                        </span>
+                                                    )}
                                                 </div>
                                             </div>
                                         </div>

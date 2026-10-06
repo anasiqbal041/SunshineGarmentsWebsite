@@ -7,11 +7,12 @@ import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 import { FaHeart, FaStar, FaMinus, FaPlus, FaShoppingBag, FaShieldAlt, FaTruck, FaUndo } from 'react-icons/fa';
 
-import { products as allProducts } from '../Data/products';
+import { getProductPriceDetails, products as allProducts } from '../Data/products';
 
 const ProductDetails = () => {
     const { id } = useParams();
     const product = allProducts.find(p => p.id === parseInt(id));
+    const priceDetails = product ? getProductPriceDetails(product) : null;
     const [quantity, setQuantity] = useState(1);
     const [selectedSize, setSelectedSize] = useState('6-12M');
     const { addToCart } = useCart();
@@ -77,9 +78,13 @@ const ProductDetails = () => {
                         </h1>
 
                         <div className="flex items-baseline gap-4 mb-10">
-                            <span className="text-3xl font-black text-pink-500">Rs.{product.price.toLocaleString()}</span>
-                            <span className="text-lg text-gray-400 line-through font-bold">Rs.{Math.round(product.price * 1.3).toLocaleString()}</span>
-                            <span className="bg-red-50 text-red-500 text-[10px] font-black uppercase px-3 py-1 rounded-full tracking-wider">Save 30%</span>
+                            <span className="text-3xl font-black text-pink-500">Rs.{priceDetails.price.toLocaleString()}</span>
+                            {priceDetails.originalPrice && (
+                                <>
+                                    <span className="text-lg text-gray-400 line-through font-bold">Rs.{priceDetails.originalPrice.toLocaleString()}</span>
+                                    <span className="bg-red-50 text-red-500 text-[10px] font-black uppercase px-3 py-1 rounded-full tracking-wider">Save 10%</span>
+                                </>
+                            )}
                         </div>
 
                         <div className="mb-10 p-6 bg-gray-50 dark:bg-gray-900 rounded-[2rem] border border-gray-100 dark:border-gray-800">

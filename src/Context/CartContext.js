@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { toast } from 'react-toastify';
+import { getProductPriceDetails, products } from '../Data/products';
 
 const CartContext = createContext();
 
@@ -10,7 +11,12 @@ export const useCart = () => {
 export const CartProvider = ({ children }) => {
     const [cartItems, setCartItems] = useState(() => {
         const savedCart = localStorage.getItem('cartItems');
-        return savedCart ? JSON.parse(savedCart) : [];
+        if (!savedCart) return [];
+
+        return JSON.parse(savedCart).map(item => {
+            const product = products.find(currentProduct => currentProduct.id === item.id);
+            return product ? { ...item, ...getProductPriceDetails(product) } : item;
+        });
     });
 
     useEffect(() => {
@@ -23,12 +29,16 @@ export const CartProvider = ({ children }) => {
 
             if (existingItemIndex > -1) {
                 const newItems = [...prevItems];
-                newItems[existingItemIndex].quantity += quantity;
+                newItems[existingItemIndex] = {
+                    ...newItems[existingItemIndex],
+                    ...getProductPriceDetails(product),
+                    quantity: newItems[existingItemIndex].quantity + quantity
+                };
                 toast.success(`Updated ${product.name} quantity in cart!`);
                 return newItems;
             } else {
                 toast.success(`${product.name} added to cart!`);
-                return [...prevItems, { ...product, quantity, size }];
+                return [...prevItems, { ...product, ...getProductPriceDetails(product), quantity, size }];
             }
         });
     };

@@ -4,7 +4,7 @@ import Footer from '../Components/Footer';
 import ProductCard from '../Components/ProductCard';
 import { Helmet } from 'react-helmet';
 import { useSearchParams, Link } from 'react-router-dom';
-import { products as allProducts } from '../Data/products';
+import { getProductPriceDetails, products as allProducts } from '../Data/products';
 import { FaFilter, FaChevronDown } from 'react-icons/fa';
 import bannerGirl from '../assets/banner_girl.png';
 import bannerBoy from '../assets/banner_boy.png';
@@ -55,7 +55,7 @@ const Shop = () => {
     return (
         <div className="bg-white dark:bg-gray-950 min-h-screen transition-all duration-500">
             <Helmet>
-                <title>Shop Collection | Sunshine Baby Garments</title>
+                <title>Shop Collection | Anas Baby Garments</title>
             </Helmet>
             <Navbar />
 

@@ -2,9 +2,11 @@ import React from 'react';
 import { useCart } from '../Context/CartContext';
 import { Link } from 'react-router-dom';
 import { FaHeart, FaShoppingBag, FaEye } from 'react-icons/fa';
+import { getProductPriceDetails } from '../Data/products';
 
 const ProductCard = ({ product }) => {
     const { addToCart } = useCart();
+    const priceDetails = getProductPriceDetails(product);
     return (
         <div className="group flex flex-col">
             <div className="relative aspect-[4/5] rounded-[2rem] overflow-hidden bg-gray-50 dark:bg-gray-900 premium-shadow-hover mb-6">
@@ -50,8 +52,13 @@ const ProductCard = ({ product }) => {
                 <Link to={`/product/${product.id}`} className="block">
                     <h3 className="text-sm font-bold text-gray-900 dark:text-white mb-2 line-clamp-1 group-hover:text-pink-500 transition-colors">{product.name}</h3>
                     <div className="flex items-center gap-2">
-                        <span className="text-lg font-black text-gray-900 dark:text-white">Rs.{product.price.toLocaleString()}</span>
-                        <span className="text-xs text-gray-400 line-through font-bold">Rs.{Math.round(product.price * 1.3).toLocaleString()}</span>
+                        <span className={`text-lg font-black ${priceDetails.originalPrice ? 'text-pink-500' : 'text-gray-900 dark:text-white'}`}>Rs.{priceDetails.price.toLocaleString()}</span>
+                        {priceDetails.originalPrice && (
+                            <>
+                                <span className="text-xs text-gray-400 line-through font-bold">Rs.{priceDetails.originalPrice.toLocaleString()}</span>
+                                <span className="text-[9px] font-black text-red-500 uppercase">10% Off</span>
+                            </>
+                        )}
                     </div>
                 </Link>
             </div>
